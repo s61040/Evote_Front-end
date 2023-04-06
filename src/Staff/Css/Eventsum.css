@@ -1,0 +1,26 @@
+#Headermain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 4px solid rgb(19, 18, 18);
+}
+.Mainadmin{
+    padding-top: 20px;
+}
+
+#main {
+    justify-content: center;
+}
+
+.Event{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-left: 12%;
+}
+
+.Main_Admin{
+    padding-top: 5%;
+}
+
+#Number{ 
+    font-weight: bold;
+}

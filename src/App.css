@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+ }
+ 
+ .Home{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+  
+ }
+ 
+ .bodyleft{
+  display: flex;  
+  align-items: center;
+     text-align: center;
+     min-height: 100vh;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+     
+   
+   background-color: rgba(94, 115, 238, 0.519);
+ }
+ .bodyright{
+  display: flex;  
+align-items: center;  
+   text-align: center;
+   min-height: 100vh;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+   background-color: rgba(3, 14, 73, 0.8);
+ }
+ 

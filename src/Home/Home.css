@@ -1,0 +1,61 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800'); */
+
+.App {
+    text-align: center;
+   }
+   
+   .Home{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    
+   }
+   
+   .bodyleft{
+    display: flex;  
+    align-items: center;  
+       text-align: center;
+       min-height: 100vh;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+  
+     background-color: rgba(255, 255, 255, 0.519);
+   }
+   .bodyright{
+    display: flex;  
+  align-items: center;  
+     text-align: center;
+     min-height: 100vh;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background-color: #FF4B2B;
+   }
+   
+   #user{
+    margin-left: 20px;
+   }
+
+   #button_full_o{
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #ffffff;
+    font-size: 1px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+
+  #button_h_o{
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #ffffff;
+    color: #FF4B2B;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }

@@ -1,0 +1,5 @@
+#Headermain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid rgb(19, 18, 18);
+}

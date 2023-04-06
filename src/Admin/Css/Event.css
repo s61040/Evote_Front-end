@@ -1,0 +1,21 @@
+#Headermain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid rgb(19, 18, 18);
+}
+
+.MainEvent{
+    padding-top: 20px; 
+   
+}
+ 
+
+#Cardevent{
+    border-color: #FF4B2B;
+     left: 13%;  
+    width: 1200px;
+}
+
+.EvenMain{
+    height: 200px;
+}

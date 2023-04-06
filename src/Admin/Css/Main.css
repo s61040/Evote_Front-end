@@ -1,0 +1,55 @@
+#Headermain{ 
+    border-bottom: 4px solid rgb(19, 18, 18);
+}
+/* #H{ 
+    border-bottom: 4px solid rgb(19, 18, 18);
+} */
+.Mainadmin{  
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+#main {
+    justify-content: center;
+}
+
+.Event{
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 12%;
+}
+
+.Main_Admin{ 
+    padding-top: 5%;
+}
+
+#Number{ 
+    font-weight: bold;
+}
+
+#button_full_o{
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #ffffff;
+    font-size: 1px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }
+
+  #button_h_o{
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #ffffff;
+    color: #FF4B2B;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+  }

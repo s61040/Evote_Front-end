@@ -1,0 +1,11 @@
+.HeaderDetail
+{
+    padding: 20;
+     
+}
+.Cardimg{
+    justify-content: center;
+    display: "flex" ;
+    width: 55rem ;
+    margin-left: 20 ;
+}

@@ -1,0 +1,19 @@
+#Headermain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 2px solid rgb(19, 18, 18);
+}
+
+.Addcan{
+    padding-top: 20px;
+    width: 1200px;
+    margin-left: 170px;
+}
+ 
+#imgcan{
+    width: 250px;
+}
+
+.AddCanMain{
+    background-color: rgb(77, 183, 114);
+}

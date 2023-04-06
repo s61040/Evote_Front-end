@@ -1,0 +1,9 @@
+.main-result{ 
+  align-items: center;  
+     text-align: center;
+     color: #FF4B2B;
+     min-height: 100vh;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background-color: #ffffff;
+}
