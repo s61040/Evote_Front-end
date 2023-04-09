@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   web:
-    image: evoting-client:1.0.2
+    image: evoting-client:1.0.3
     build:
       context: .
       dockerfile: Dockerfile

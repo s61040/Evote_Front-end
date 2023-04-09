@@ -20,12 +20,9 @@ function Home() {
   const [password, setPassword] = useState([]);
   const [level, setLevel] = useState(0); 
   const [adminList, setAdminList] = useState([]);
-  
-  
-
+   
   const [clockState, setClockState] = useState();
-
-
+ 
   const current = new Date();
   const date2 = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   const date = `${current.getFullYear()}-${current.getMonth()+1}-${current.getDate()}`; 
@@ -46,8 +43,7 @@ function Home() {
   }, []); 
 
   // Login admin || staff || participant -------------------------------------------------------------------------------------------------------
-
-
+ 
   const checkeventstatus = () => {
     Axios.post(`${window._env_.API_URL}/Checkevent`, {
       date : date,
@@ -245,4 +241,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home; 

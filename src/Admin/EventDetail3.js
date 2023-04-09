@@ -298,7 +298,7 @@ function EventDetail3() {
             if (res.data.massage == true) {
               Axios.post(`${window._env_.API_URL}/user_count`, {
                 Id_event: Id_event,
-              }).then((res) => {
+              }).then((res) => { 
                 var Email = res.data.massage;
                 console.log("res.data.massage == ", res.data.massage);
                 for (var i = 0; i < res.data.massage.length; i++) {
@@ -347,7 +347,6 @@ function EventDetail3() {
 
   const ShowState = () => {
     console.log("check_C = ", check_C);
-
     if(check_C == 3){
       setShow4(1);
     }
@@ -358,7 +357,8 @@ function EventDetail3() {
  
 
   const handleInputChange3 = (event) => {
-    setpath = URL.createObjectURL(event.target.files[0]);
+    setpath = event.target.value;
+    console.log("setpath === > " ,  setpath);
     setuserInfo({
       ...userInfo,
       file: event.target.files[0],
@@ -447,9 +447,9 @@ function EventDetail3() {
                   <img
                     className="previewimg"
                     src={userInfo.filepreview}
-                    alt="UploadImage"
+                    alt="UploadFile"
                   />
-                  <p>{userInfo.filepreview}</p>
+                  <p></p>
                 </div>
               ) : null}
             </div>
