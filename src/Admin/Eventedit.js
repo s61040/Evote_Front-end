@@ -1,6 +1,7 @@
 import { React, Component, useState, setState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Axios from "axios";
+import Swal from 'sweetalert2';
 import "./Css/Edit.css";
 import { Space, Table, Tag, Input } from "antd";
 import {
@@ -198,26 +199,49 @@ function Eventedit() {
   };
 
   const delete_can = (id) => {
-    Axios.post(`${window._env_.API_URL}/delete_can` , {
-      id: id,
-    }).then((res) => {
-      if (res.data.massage == "delete") {
-        alert("Delete");
-        window.location = "/MainAdmin/Event/EventManagement/EditEvent";
-      }
-    });
+    Swal.fire({
+      title: 'ยืนยันลบรายชื่อผู้ลงสมัคร', 
+      showCancelButton: true,
+      confirmButtonText: 'ยืนยัน', 
+      confirmButtonColor: '#FF4B2B',
+      cancelButtonColor: '#FF4B2B',
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Axios.post(`${window._env_.API_URL}/delete_can` , {
+          id: id,
+        }).then((res) => {
+          if (res.data.massage == "delete") { 
+            window.location = "/MainAdmin/Event/EventManagement/EditEvent";
+          }
+        });
+        Swal.fire('Saved!', '', 'success') 
+      } 
+    })   
   };
 
+
   const delete_par = (id_par) => {
-    Axios.post(`${window._env_.API_URL}/delete_par` , {
-      id_par: id_par,
-      id_e: id_e,
-    }).then((res) => {
-      if (res.data.massage == "delete") {
-        alert("Delete");
-        window.location = "/MainAdmin/Event/EventManagement/EditEvent";
-      }
-    });
+    Swal.fire({
+      title: 'ยืนยันลบรายชื่อผู้ใช้งาน', 
+      showCancelButton: true,
+      confirmButtonText: 'ยืนยัน', 
+      confirmButtonColor: '#FF4B2B',
+      cancelButtonColor: '#FF4B2B',
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Axios.post(`${window._env_.API_URL}/delete_par` , {
+          id_par: id_par,
+          id_e: id_e,
+        }).then((res) => {
+          if (res.data.massage == "delete") { 
+            window.location = "/MainAdmin/Event/EventManagement/EditEvent";
+          }
+        });
+        Swal.fire('Saved!', '', 'success') 
+      } 
+    })   
   };
 
   const showname = (e) => {
@@ -263,7 +287,7 @@ function Eventedit() {
     console.log("dateS = " , dateS);
 
     if (current >= dateS) {
-      alert("CheckDate");
+      alert("ไม่สามารถเลือกวันนี่ผ่านมาแล้วได้");
     } else {
       Axios.post(`${window._env_.API_URL}/edit_evemt` ,{
         id_e: id_e,

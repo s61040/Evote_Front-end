@@ -187,6 +187,7 @@ function Home() {
                 />
               </Form.Group> 
               <Button 
+                style={{fontSize: '70%' }}
                 id="button_full_o" 
                 onClick={Voted}   
                 variant="primary" >

@@ -194,7 +194,7 @@ function StaffmainStaffhistory() {
         Id_event: Id_event,
       }).then((res) => {});
       localStorage.setItem("check", 3);
-      // alert("ผิดปกติ");
+      alert("ผิดปกติ");
     };
 
  // Detail -------------------------------------------------------------------

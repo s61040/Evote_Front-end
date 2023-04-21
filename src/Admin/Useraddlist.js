@@ -90,15 +90,17 @@ function Useraddlist() {
                       // alert("เพิ่มรายชื่อสำเร็จ"); 
                     } else {
                       // console.log(res)
-                      alert("เช็คข้อมูล")
+                      // alert("เช็คข้อมูล")
                     }
-                    alert("เพิ่มรายชื่อสำเร็จ");
+                    // alert("เพิ่มรายชื่อสำเร็จ");
                   })
                   .catch((error) => {
                     console.log(error);
                   }); 
               } 
         }
+        alert("เสร็จสิ้น");
+        window.location = "/MainAdmin/Usermain";
           }) 
       };
        
@@ -297,7 +299,7 @@ function Useraddlist() {
             </div>
           </Card.Body>
         </Card>
-        <table>
+        {/* <table>
         <thead>
           <tr key={"header"}>
             {headerKeys.map((key) => (
@@ -315,7 +317,7 @@ function Useraddlist() {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
       </div>
     </div>
   );

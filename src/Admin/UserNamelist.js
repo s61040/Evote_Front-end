@@ -211,7 +211,7 @@ function UserNamelist() {
                     }
                     type="submit"
                   >
-                    Edit
+                    แก้ไข
                   </Button>
                 </Space>
               )}

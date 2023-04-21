@@ -318,7 +318,7 @@ function EventDetail3() {
                     }
                   });
                 }
-                alert("Update Event"); 
+                alert("การยืนยันอีเว้นสำเร็จ"); 
                 window.location("/MainAdmin/Event/Eventstat");
               }); 
             } else {

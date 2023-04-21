@@ -219,7 +219,7 @@ function Usermain_E() {
         console.log("ID Candidate =", id_candidate);
         window.localStorage.clear();
         console.log("Insert", res);
-        alert("Insert");
+        alert("เสร็จสิ้นการเลือกตั้ง");
         window.location = "/";
       } else {
         console.log("FailVote");

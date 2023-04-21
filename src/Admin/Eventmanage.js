@@ -117,7 +117,7 @@ function Eventmanage() {
       name_event: name_event,
     })
       .then((res) => {
-        alert("Delete Data Event");
+        alert("ลบเสร็จสิ้น");
         window.location = "/MainAdmin/Event/EventManagement";
         console.log(res);
       })

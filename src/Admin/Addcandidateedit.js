@@ -157,7 +157,7 @@ function Addcandidate() {
               }).then((res, err) => {
                 if (res.data.massage == "FailCandidate") {
                   alert("Dupplicate Candidate");
-                } else if(res.data.massage == "Uploadok"){
+                } else if(res.data.massage == "insertsubmit"){
                   setCandidatelist([
                     ...candidatelist,
                     {
@@ -172,7 +172,7 @@ function Addcandidate() {
                   console.log("data", res.data);
                   // alert("Add Candidate");
                   window.location =
-                    "/MainAdmin/Event/EventManagement/EventCreate/AddRole/Eventsum";
+                    "/MainAdmin/Event/EventManagement/EditEvent";
                 } else {
                   alert("DataCheck")
                 }

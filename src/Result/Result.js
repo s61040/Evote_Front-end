@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Space, Table, Tag, Input } from "antd";
+import Swal from 'sweetalert2';
 import "./CssResults/Result.css";
 import "antd/dist/antd.css";
 import {
@@ -57,13 +58,25 @@ function Result() {
       Axios.post(`${window._env_.API_URL}/Show_Vote`,{
         id_event : id_event,
       })
-      .then((res,err) => {
+      .then((res,err) => { 
         if(res.data.massage == 'ok'){
            localStorage.setItem('id_event',id_event);  
            localStorage.setItem('Vo',res.data.check);  
            localStorage.setItem('no.par',par); 
            localStorage.setItem("Img", res.data.Img); 
-           navi('\detail');
+           
+           Swal.fire({
+            title: 'ยืนยันการตรวจสอบผลการเลือกตั้ง', 
+            showCancelButton: true,
+            confirmButtonText: 'ยืนยัน', 
+            confirmButtonColor: '#FF4B2B',
+            cancelButtonColor: '#FF4B2B',
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+              navi('\detail'); 
+            } 
+          })  
         }
       })
   
